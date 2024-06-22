@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .carousel-inner img{
+        width:  1140px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div class="container">
+    <div id="demo" class="carousel slide" data-ride="carousel"interval="1000">
+
+        <!--indicator-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo"data-slide-to="0"class="active"></li>
+            <li data-target="#demo"data-slide-to="1"></li>
+            <li data-target="#demo"data-slide-to="2"></li>
+        </ul>
+
+        <!--slideshow 1-->
+        <div class="carousel-inner img">
+            <div class="carousel-item active">
+                <img src="ANONY.jpg" alt="bunga">
+                <div class="carousel-caption">
+                    <h3>Bunga 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores vero excepturi sed, veniam obcaecati repellat possimus non dolorem corporis sunt? Perspiciatis repellat iusto, nobis deserunt cupiditate eligendi dolores ab.</p>
+                </div>
+            </div>
+
+        <!--slideshow 2-->
+            <div class="carousel-item active">
+                <img src="Dirgantara_Dan_Kepulangan.jpg" alt="bunga">
+                <div class="carousel-caption">
+                    <h3>Bunga 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores vero excepturi sed, veniam obcaecati repellat possimus non dolorem corporis sunt? Perspiciatis repellat iusto, nobis deserunt cupiditate eligendi dolores ab.</p>
+                </div>
+            </div>
+
+        <!--slideshow 3-->
+            <div class="carousel-item active">
+                 <img src="alie.jpg" alt="bunga">
+                <div class="carousel-caption">
+                <h3>Bunga 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores vero excepturi sed, veniam obcaecati repellat possimus non dolorem corporis sunt? Perspiciatis repellat iusto, nobis deserunt cupiditate eligendi dolores ab.</p>
+                </div>
+            </div>
+        </div>
+
+            <!--leftf and right controls-->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

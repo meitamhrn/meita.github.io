@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  background-color:darksalmon;
+  justify-content: center;
+  color:brown
+}
+
+.tes{background-color:white;
+  text-align: center;}
+
+.tes2{
+  color:brown;
+  background-image:url(image/);
+}
+.tes1{color:rgb(205, 92, 92);
+font-family: cursive;}
+.tes3{color: darksalmon;}
+.tes4{
+        background-image:url(image/download_image_1714717937618.png);
+        background-size:cover;
+        margin-top: 0px;}
+.tes5 h1, p{
+    color:brown;
+    text-align:center;
+}
+.footer{
+    bottom: 0;
+    width: 100%;
+    padding:20px;
+    background-color:darksalmon;
+    color: brown;
+    padding-top: 15px;
+    margin-top: 10px;
+
+}
+.footer p{
+    text-align:left;
+    margin-top: 10px;
+}
+.dropdown1{
+    background-color:rgba(255, 99, 71, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.font{
+    font-family:cursive;
+    color:brown;
+    text-align:center;
+}
+.box {
+    color:brown;
+    text-align: right;
+    text-align: left;
+}
+.bunga{
+    text-align: center;
+    color: brown;
+    margin-top: 10px;
+}
+.navbarB{background-color:darksalmon;
+    display: flex;
+    color:brown;
+    font-family:'Times New Roman', Times, serif;
+    justify-content:center;
+    }
+.Margin{
+  margin-top: 5%;
+}
+.carousel-inner img{
+  width:  600px;
+  height: 300px;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.image-container {
+    max-width: 100%; /* Mengatur lebar maksimal kontainer gambar */
+    height: auto; /* Mengatur ketinggian gambar agar proporsi aslinya terjaga */
+}
+
+.image-container img {
+    max-width: 100%; /* Mengatur lebar maksimal gambar */
+    height: auto; /* Mengatur ketinggian gambar agar proporsi aslinya terjaga */
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: 500px;
+}
+
+.image-grid {
+    position: relative;} /* Membuat kontainer gambar relatif
+} 

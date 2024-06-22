@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="validasi" novalidate>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group"> <!--Kolom Nama-->
+                        <label for="nama">First name:</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama" id="nama" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill name!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="last_name">Last name:</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama" id="last_name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill name!
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-6"><!--Kolom Email-->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill email!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"><!--Kolom posword-->
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" placeholder="Password" id="password" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill password!
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                <p>Gender</p><!--Kolom Gender-->
+                <div class="inlineradio">
+                    <label class="radio-inline"><input type="radio" name="inlineradio" checked>Male</label>
+                    <label class="radio-inline"><input type="radio" name="inlineradio" checked>Female</label>
+                </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" placeholder="Address" id="address" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill address!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"><!--Kolom Kota-->
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control"  placeholder="City" id="city" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill city!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group"><!--Kolom Negara-->
+                        <label for="state">State:</label>
+                        <select class="form-control" id="state" required>
+                            <option value="">Select State</option>
+                            <option>Indonesia</option>
+                            <option>Korea</option>
+                            <option>London</option>
+                            <option>Jepang</option>
+                            <option>Amerika</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select state!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="zip">Zip:</label>
+                        <input type="text" class="form-control" placeholder="Zip" id="zip" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                             Please fill zip!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="reset" class="btn btn-danger mr-1">Reset</button>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        var form = document.querySelector('.validasi');
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html>
